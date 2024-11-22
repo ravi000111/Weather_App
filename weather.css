@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('sunset-8401670_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.main-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  animation: fadeIn 0.5s ease-out; 
+}
+
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-box input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #007bff;
+}
+
+
+.input-box button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-box button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.input-box button:active {
+  background-color: #004085;
+  transform: scale(1);
+}
+
+
+#weatherOutput {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.weather-data {
+  margin-top: 20px;
+}
+
+.weather-data h2 {
+  font-size: 22px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.weather-data p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.weather-data img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.loading-spinner {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #3498db; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  display: none; 
+}
+
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
